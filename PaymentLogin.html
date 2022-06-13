@@ -20,7 +20,7 @@
 <body>
   <nav class="navbar navbar-expand-lg bg-navbar align-content-center">
     <div class="container-fluid">
-      <a class="navbar-brand ms-10" href="#">
+      <a class="navbar-brand ms-10" href="https://beyondgames.co.th/">
         <img src="/Assets/Beyond_Game_Horizon_White.png" style="width: 70%">
       </a>
       <div class="collapse navbar-collapse">
@@ -111,7 +111,7 @@
     </div>
   </div>
   <div class="p-5 mb-5 bg-warning text-dark"></div>
-  <div class="card mx-auto" style="width: 50rem">
+  <div class="card mx-auto shadow" style="width: 50rem; border-color: #f3f3f3; border-radius: 5%;">
     <div class="card-body">
       <h5 class="card-title">
         <span class="circle-singleline shadow-lg">1.</span> เลือกจำนวน
@@ -119,55 +119,84 @@
       <div class="row">
         <div class="col-sm-3">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off">
-            <label class="btn btn-outline-danger" for="success-outlined1">
-              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;">50 Coins</h5>
-              <img src="/Assets/coin.png" style="width: 100px;">
-              <div class="d-grid gap-1 mx-auto">
-                <a href="#" class="btn btn-primary">50 Baht</a>
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off"
+              onclick="document.getElementById('changeClass1').classList.toggle('customred');">
+            <label class="btn btn-outline-customred" for="success-outlined1">
+              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;"><span
+                  class="text-dark">50 Coins</span></h5>
+              <img src="/Assets/coin.png" style="width: 150px; margin-top: -14%; margin-bottom: 18%;">
+              <div class="d-grid gap-1" style="margin-top: 5%;">
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass1"><span style="color:#000">50
+                    Coins</span></div>
               </div>
             </label>
           </div>
         </div>
         <div class="col-sm-3">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off">
-            <label class="btn btn-outline-danger" for="success-outlined1">
-              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;">50 Coins</h5>
-              <img src="/Assets/coin.png" style="width: 100px;">
-              <div class="d-grid gap-1 mx-auto">
-                <a href="#" class="btn btn-primary">50 Baht</a>
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined2" autocomplete="off"
+              onclick="document.getElementById('changeClass2').classList.toggle('customred');">
+            <label class="btn btn-outline-customred" for="success-outlined2">
+              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;"><span
+                  class="text-dark">50 Coins</span></h5>
+              <img src="/Assets/coin.png" style="width: 150px; margin-top: -25%;">
+              <div class="d-grid gap-1 mt-2">
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass2"><span style="color:#000">50
+                    Coins</span></div>
               </div>
             </label>
           </div>
         </div>
         <div class="col-sm-3">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off">
-            <label class="btn btn-outline-danger" for="success-outlined1">
-              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;">50 Coins</h5>
-              <img src="/Assets/coin.png" style="width: 100px;">
-              <div class="d-grid gap-1 mx-auto">
-                <a href="#" class="btn btn-primary">50 Baht</a>
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off"
+              onclick="document.getElementById('changeClass3').classList.toggle('customred');">
+            <label class="btn btn-outline-customred" for="success-outlined3">
+              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;"><span
+                  class="text-dark">50 Coins</span></h5>
+              <img src="/Assets/coin.png" style="width: 150px; margin-top: -25%;">
+              <div class="d-grid gap-1 mt-2">
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass3"><span style="color:#000">50
+                    Coins</span></div>
               </div>
             </label>
           </div>
         </div>
         <div class="col-sm-3">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off">
-            <label class="btn btn-outline-danger" for="success-outlined1">
-              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;">50 Coins</h5>
-              <img src="/Assets/coin.png" style="width: 100px;">
-              <div class="d-grid gap-1 mx-auto">
-                <a href="#" class="btn btn-primary">50 Baht</a>
+            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined4" autocomplete="off"
+              onclick="document.getElementById('changeClass4').classList.toggle('customred');">
+            <label class="btn btn-outline-customred" for="success-outlined4">
+              <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto" style="width: 30px;"><span
+                  class="text-dark">50 Coins</span></h5>
+              <img src="/Assets/coin.png" style="width: 150px; margin-top: -25%;">
+              <div class="d-grid gap-1 mt-2">
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass4"><span style="color:#000">50
+                    Coins</span></div>
               </div>
             </label>
           </div>
         </div>
-        <center><button class="btn btn-danger mt-3">Next ></button></center>
+        <center><a href="/SelectServer.html" class="btn btn-danger mt-3">Next ></a></center>
       </div>
     </div>
 </body>
+
+<script>
+  function changeClass1() {
+    document.getElementById('changeClass1').classList.toggle('customred');
+
+    document.getElementsByClassName('customred').onblur = function () {
+      if (!this.ignoreClickEvent) {
+        this.style.display = 'none';
+      }
+    };
+  }
+
+
+</script>
 
 </html>

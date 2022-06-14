@@ -73,14 +73,17 @@
                                                 <a href="#" style="text-decoration: none;" class="text-end">Forgot
                                                     Password ?</a>
                                             </div>
+
                                             <div class="d-grid gap-2">
                                                 <button class="btn btn-primary shadow bg-primary mb-3 rounded"
                                                     type="button">Log In</button>
+
                                         </form>
                                         <div class="line-before-after">
                                             <span class="shape-inside">or log in with</span>
                                         </div>
                                     </div>
+
                                     <div>
                                         <button class="btn btn-primary bg-transparent text-black-50 rounded"
                                             type="button"><img
@@ -116,23 +119,77 @@
         </div>
     </div>
     <div class="p-5 mb-5 bg-warning text-dark"></div>
-    <div class="card mx-auto" style="width: 50rem">
+    <div class="card mx-auto shadow" style="width: 40rem; border-radius: 10px;">
         <div class="card-body">
             <h5 class="card-title">
-                <span class="circle-singleline">3.</span>เลือกวิธีการชำระเงิน
+                <center class="mb-2">จำนวนทั้งหมด</center>
+                <center class="h3"><b>THB XX.00</b></center>
             </h5>
             <div class="row">
-                <div class="d-grid gap-2">
-                    <button class="btn btn-outline-danger" type="button" id="small"><label for="small">Small</label>
-                    </button>
-                    <button class="btn btn-outline-danger label-radio" type="button" data-bs-toggle="button" autocomplete="on" aria-pressed="true">Button</button>
+                <div class="col-sm-4 mx-auto">
+                    <div class="d-grid mx-auto">
+                        <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1"
+                            autocomplete="off"
+                            onclick="document.getElementById('changeClass1').classList.toggle('customred');">
+                        <label class="btn btn-outline-customred" for="success-outlined1">
+                            <h5 class="card-title"><img src="/Assets/coin.png" class="mx-auto"
+                                    style="width: 30px;"><span class="text-dark">50 Coins</span></h5>
+                            <img src="/Assets/coin.png" style="width: 150px; margin-top: -14%; margin-bottom: 8%;">
+                            <div class="d-grid gap-1" style="margin-top: 5%;">
+                                <div class="bg-black-50 text-dark customred-origin" id="changeClass1"><span
+                                        style="color:#000">50
+                                        Coins</span></div>
+                            </div>
+                        </label>
+                    </div>
                 </div>
             </div>
-            <center>
-                <a href="/SelectServer.html" class="btn btn-outline-danger mt-3 me-2">
-                    < Back</a><a href="/TruePayment1.html" class="btn btn-danger mt-3">Next ></a>
-            </center>
+            <div class="row">
+                <div class="col-sm-2 mx-auto">
+                    <div class="d-grid gap-1 mx-auto">
+                        ไอเทม
+                    </div>
+                </div>
+                <div class="col-sm-2 mx-auto">
+                    <div class="d-grid gap-1 mx-auto">
+                        50 Coins + Lottery x1
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-sm-2 mx-auto">
+                    <div class="d-grid gap-1 mx-auto">
+                        ราคา
+                    </div>
+                </div>
+                <div class="col-sm-2 mx-auto">
+                    <div class="d-grid gap-1 mx-auto">
+                        50 THB
+                    </div>
+                </div>
+            </div>
         </div>
+        <center>ตรวจสอบไอดีที่ต้องการอีกครั้ง</center>
+        <div class="check-info">
+            Wikiki22456
+        </div>
+        <center style="margin-top: 20px;">ตรวจสอบเซิร์ฟเวอร์ที่ต้องการอีกครั้ง</center>
+        <div class="check-info" style="margin-bottom:20px;">
+            Winter Keep
+        </div>
+        <center>กรอกหมายเลขโทรศัพท์</center>
+        <form class="mx-auto">
+            <input type="text" class="custom-form" style="margin-bottom: 20px;">
+        </form>
+        <div class="d-grid gap-2">
+            <button class="btn btn-danger mx-5 mb-4" type="button">Button</button>
+        </div>
+    </div>
+    <center>
+        <a href="/PaymentLogin.html" class="btn btn-outline-danger mt-3 me-2">
+            < Back</a><a href="SelectPayment.html" class="btn btn-danger mt-3">Next ></a>
+    </center>
+    </div>
     </div>
 </body>
 

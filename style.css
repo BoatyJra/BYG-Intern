@@ -131,6 +131,7 @@ h2 {
   padding-bottom: 4px;
   z-index: 1;
 }
+
 /* 
 label:before{
   position: absolute;
@@ -177,4 +178,51 @@ input[type="button"]:active + label::before{
 
 .custom-form:focus{
   border-color: #5cb85c;  box-shadow: none; -webkit-box-shadow: none;
+}
+
+input[name="payment"]{
+  display: none;
+}
+
+.selectpay{
+  position: relative;
+  color: black;
+  border: 2px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 5px 10px 10px 5px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selectpay:before{
+  content: "";
+  height: 20px;
+  width: 20px;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+input[name="payment"]:checked + .selectpay{
+  background-color: white;
+  color:black;
+  border: 2px solid red;
+}
+
+input[name="payment"]:hover + .selectpay{
+  background-color: #ffccc4ec;
+  color:black;
+  border: 2px solid red;
+}
+
+input[name="payment"]:checked + .selectpay:before{
+  height: 20px;
+  width: 20px;
+  border: 6px solid #f3f3f3;
+  background-color: red;
+}
+
+.containerpay{
+  position: absolute;
 }

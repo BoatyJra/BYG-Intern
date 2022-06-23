@@ -15,6 +15,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -119,46 +120,56 @@
       <div class="row">
         <div class="col-sm-4">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined1" autocomplete="off"
-              onclick="document.getElementById('changeClass1').classList.toggle('customred');">
-            <label class="btn btn-outline-customred" for="success-outlined1">
+            <input type="radio" class="btn-check" name="server" id="button1" checked="checked">
+            <label class="btn btn-outline-customred selectserver" for="button1">
               <img src="/Assets/winter-keep-9.png" style="width: 150px;">
               <div class="d-grid gap-1" style="margin-top: 5%;">
-                <div class="bg-black-50 text-dark customred-origin" id="changeClass1"><span style="color:#000">Winter Keep</span></div>
+                <button class="btn btn-outline-danger" id="button2">test</button>
               </div>
             </label>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined2" autocomplete="off"
+            <input type="radio" class="btn-check" name="server" id="success-outlined2" autocomplete="off"
               onclick="document.getElementById('changeClass2').classList.toggle('customred');">
             <label class="btn btn-outline-customred" for="success-outlined2">
               <img src="/Assets/goblin-raid-10.png" style="width: 150px;">
               <div class="d-grid gap-1" style="margin-top: 5%;">
-                <div class="bg-black-50 text-dark customred-origin" id="changeClass2"><span style="color:#000">Goblin Raid</span></div>
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass2"><span style="color:#000">Goblin
+                    Raid</span></div>
               </div>
             </label>
           </div>
         </div>
         <div class="col-sm-4">
           <div class="d-grid gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off"
+            <input type="radio" class="btn-check" name="server" id="success-outlined3" autocomplete="off"
               onclick="document.getElementById('changeClass3').classList.toggle('customred');">
             <label class="btn btn-outline-customred" for="success-outlined3">
               <img src="/Assets/masters-of-magic-9.png" style="width: 150px;">
               <div class="d-grid gap-1" style="margin-top: 5%;">
-                <div class="bg-black-50 text-dark customred-origin" id="changeClass3"><span style="color:#000">Masters of Magic</span></div>
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass3"><span style="color:#000">Masters
+                    of Magic</span></div>
               </div>
             </label>
           </div>
         </div>
+        <input id="button1" value="Subscribe" type="submit" name="signUp">
+        <input id="button2" value="Subscribe" type="submit" name="signUp">
+      </div>
       <center>
         <a href="/PaymentLogin.html" class="btn btn-outline-danger mt-3 me-2">
-        < Back</a><a href="SelectPayment.html" class="btn btn-danger mt-3">Next ></a>
+          < Back</a><a href="SelectPayment.html" class="btn btn-danger mt-3">Next ></a>
       </center>
     </div>
   </div>
 </body>
+<script>
+  $("#button1").click(function(){
+    $("#button2").click(); 
+    return false;
+});
+</script>
 
 </html>

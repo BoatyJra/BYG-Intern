@@ -112,6 +112,13 @@
     </div>
   </div>
   <div class="p-5 mb-5 bg-warning text-dark"></div>
+  <div class="container">
+    <ul class="progressbar">
+        <li>ORDER</li>
+        <li class="active">SERVER</li>
+        <li>PAYMENT</li>
+    </ul>
+</div>
   <div class="card mx-auto" style="width: 50rem">
     <div class="card-body">
       <h5 class="card-title">
@@ -119,7 +126,7 @@
       </h5>
       <div class="row">
         <div class="col-sm-4">
-          <div class="d-grid gap-1 mx-auto">
+          <div class="d-flex gap-1 mx-auto">
             <input type="radio" class="btn-check" name="server" id="button1" checked="checked">
             <label class="btn btn-outline-customred selectserver" for="button1">
               <img src="/Assets/winter-keep-9.png" style="width: 150px;">
@@ -164,12 +171,41 @@
       </center>
     </div>
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16 " height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+  </svg></button>
+  <div style="margin-bottom: 100px;"></div>
+  <footer>
+    <div style="background-color: #313b45">
+      <p class="text-light pt-4">@xxxxxxxxxxxxxxxxxx</p>
+    </div>
+  </footer>
 </body>
 <script>
-  $("#button1").click(function(){
-    $("#button2").click(); 
+  $("#button1").click(function () {
+    $("#button2").click();
     return false;
-});
+  });
+
+  //Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
 </script>
 
 </html>

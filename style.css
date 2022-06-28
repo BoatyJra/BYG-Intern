@@ -92,7 +92,7 @@ h2 {
   background-color: #fff;
 }
 
-.btn-outline-customred:checked, .btn-outline-customred:active, .btn-outline-customred:focus{
+.btn-outline-customred:active, .btn-outline-customred:focus, .btn-outline-customred:visited, .btn-outline-customred:active:focus{
   color: #fff;
   background-color: #fef3f1 !important;
   border-color: #db4833 !important;
@@ -101,7 +101,7 @@ h2 {
 .btn-outline-customred:hover{
   color: #fff;
   background-color: #fef3f1 !important;
-  border-color: #db4833 !important; /*set the color you want here*/
+  border-color: #db4833 !important;
 }
 
 .btn-outline-grey{
@@ -113,7 +113,7 @@ h2 {
 .btn-outline-grey:active, .btn-outline-grey:hover, .btn-outline-grey-active{
   color: #fff;
   background-color: #fef3f1 !important;
-  border-color: #db4833 !important; /*set the color you want here*/
+  border-color: #db4833 !important;
 }
 
 .customred-origin {

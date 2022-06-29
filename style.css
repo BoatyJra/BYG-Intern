@@ -92,7 +92,8 @@ h2 {
   background-color: #fff;
 }
 
-.btn-outline-customred:active, .btn-outline-customred:focus, .btn-outline-customred:visited, .btn-outline-customred:active:focus{
+.btn-outline-customred.focus, 
+.btn-outline-customred:focus{
   color: #fff;
   background-color: #fef3f1 !important;
   border-color: #db4833 !important;
@@ -104,17 +105,13 @@ h2 {
   border-color: #db4833 !important;
 }
 
-.btn-outline-grey{
-  color: #fff;
-  border-color: #f3f3f3 !important;
-  background-color: #fff !important;
-}
-
-.btn-outline-grey:active, .btn-outline-grey:hover, .btn-outline-grey-active{
+.btn.btn-outline-customred.active, .btn.btn-outline-customred.active:hover{
   color: #fff;
   background-color: #fef3f1 !important;
   border-color: #db4833 !important;
 }
+
+
 
 .customred-origin {
   background-color: #f3f3f3;
@@ -225,41 +222,6 @@ input[name="payment"]:checked + .selectpay:before{
 
 .containerpay{
   position: absolute;
-}
-
-input[name="server"]{
-  display: none;
-}
-
-.selectserver{
-  position: relative;
-  color: black;
-  border: 2px solid #f3f3f3;
-  border-radius: 5px;
-  padding: 5px 10px 10px 5px;
-  display: flex;
-  width: 1233px;
-  align-items: center;
-  cursor: pointer;
-}
-
-input[name="server"]:checked + .selectserver{
-  background-color: white;
-  color:black;
-  border: 2px solid red;
-}
-
-input[name="server"]:hover + .selectserver{
-  background-color: #ffccc4ec;
-  color:black;
-  border: 2px solid red;
-}
-
-input[name="server"]:checked + .selectserver:before{
-  height: 20px;
-  width: 20px;
-  border: 6px solid #f3f3f3;
-  background-color: red;
 }
 
 .container {

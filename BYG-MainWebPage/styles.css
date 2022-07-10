@@ -1,0 +1,10 @@
+.bg-wog1{
+    background-image: url('/Assets/WOG_PRODUCT_1.png');
+    background-repeat: no-repeat;
+    height: 960px;
+}
+
+div.slider{
+    position: relative;
+    top: 321px;
+}

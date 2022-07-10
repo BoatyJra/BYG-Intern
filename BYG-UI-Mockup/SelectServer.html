@@ -114,11 +114,11 @@
   <div class="p-5 mb-5 bg-warning text-dark"></div>
   <div class="container">
     <ul class="progressbar">
-        <li>ORDER</li>
-        <li class="active">SERVER</li>
-        <li>PAYMENT</li>
+      <li>ORDER</li>
+      <li class="active">SERVER</li>
+      <li>PAYMENT</li>
     </ul>
-</div>
+  </div>
   <div class="card mx-auto" style="width: 50rem">
     <div class="card-body">
       <h5 class="card-title">
@@ -126,12 +126,14 @@
       </h5>
       <div class="row">
         <div class="col-sm-4">
-          <div class="d-flex gap-1 mx-auto">
-            <input type="radio" class="btn-check" name="server" id="button1" checked="checked">
-            <label class="btn btn-outline-customred selectserver" for="button1">
+          <div class="d-grid gap-1 mx-auto">
+            <input type="radio" class="btn-check" name="server" id="success-outlined1" autocomplete="off"
+              onclick="document.getElementById('changeClass1').classList.add('customred');">
+            <label class="btn btn-outline-customred" for="success-outlined1">
               <img src="/Assets/winter-keep-9.png" style="width: 150px;">
               <div class="d-grid gap-1" style="margin-top: 5%;">
-                <button class="btn btn-outline-danger" id="button2">test</button>
+                <div class="bg-black-50 text-dark customred-origin" id="changeClass1"><span style="color:#000">Goblin
+                    Raid</span></div>
               </div>
             </label>
           </div>
@@ -139,7 +141,7 @@
         <div class="col-sm-4">
           <div class="d-grid gap-1 mx-auto">
             <input type="radio" class="btn-check" name="server" id="success-outlined2" autocomplete="off"
-              onclick="document.getElementById('changeClass2').classList.toggle('customred');">
+              onclick="document.getElementById('changeClass2').classList.add('customred');">
             <label class="btn btn-outline-customred" for="success-outlined2">
               <img src="/Assets/goblin-raid-10.png" style="width: 150px;">
               <div class="d-grid gap-1" style="margin-top: 5%;">
@@ -152,7 +154,7 @@
         <div class="col-sm-4">
           <div class="d-grid gap-1 mx-auto">
             <input type="radio" class="btn-check" name="server" id="success-outlined3" autocomplete="off"
-              onclick="document.getElementById('changeClass3').classList.toggle('customred');">
+              onclick="document.getElementById('changeClass3').classList.add('customred');">
             <label class="btn btn-outline-customred" for="success-outlined3">
               <img src="/Assets/masters-of-magic-9.png" style="width: 150px;">
               <div class="d-grid gap-1" style="margin-top: 5%;">
@@ -162,8 +164,6 @@
             </label>
           </div>
         </div>
-        <input id="button1" value="Subscribe" type="submit" name="signUp">
-        <input id="button2" value="Subscribe" type="submit" name="signUp">
       </div>
       <center>
         <a href="/PaymentLogin.html" class="btn btn-outline-danger mt-3 me-2">
@@ -171,9 +171,11 @@
       </center>
     </div>
   </div>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16 " height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
-    <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-  </svg></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16 "
+      height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+    </svg></button>
   <div style="margin-bottom: 100px;"></div>
   <footer>
     <div style="background-color: #313b45">
@@ -182,30 +184,49 @@
   </footer>
 </body>
 <script>
-  $("#button1").click(function () {
-    $("#button2").click();
-    return false;
+  $(document).click(function (e) {
+    if (e.target.id != "success-outlined1") {
+      document.getElementById('changeClass1').classList.remove('customred');
+      console.log(e.target.id)
+    }
+    console.log("outside if")
   });
 
+  $(document).click(function (e) {
+    if (e.target.id != "success-outlined2") {
+      document.getElementById('changeClass2').classList.remove('customred');
+      console.log(e.target.id)
+    }
+    console.log("outside if")
+  });
+
+  $(document).click(function (e) {
+    if (e.target.id != "success-outlined3") {
+      document.getElementById('changeClass3').classList.remove('customred');
+      console.log(e.target.id)
+    }
+    console.log("outside if")
+  });
+  
   //Get the button:
-mybutton = document.getElementById("myBtn");
+  mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function() {scrollFunction()};
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
 
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
   }
-}
 
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 </script>
 
 </html>

@@ -12,6 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
     crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="paymentscripts.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap" rel="stylesheet" />
@@ -58,7 +60,6 @@
                       <div class="mb-3">
                         <input type="email" placeholder="Username" class="form-control" id="exampleInputEmail1"
                           aria-describedby="emailHelp">
-                        <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                       </div>
                       <div class="mb-3">
                         <input type="password" placeholder="Password" class="form-control" id="exampleInputPassword1">
@@ -68,16 +69,13 @@
                         <label class="form-check-label col-sm-7" for="exampleCheck1">Remember Me</label>
                         <a href="#" style="text-decoration: none;" class="text-end">Forgot Password ?</a>
                       </div>
-
                       <div class="d-grid gap-2">
                         <button class="btn btn-primary shadow bg-primary mb-3 rounded" type="button">Log In</button>
-
                     </form>
                     <div class="line-before-after">
                       <span class="shape-inside">or log in with</span>
                     </div>
                   </div>
-
                   <div class="mb-3 mt-2">
                     <button class="btn btn-primary bg-transparent text-black-50 rounded col-sm-5 me-4 ms-3"
                       type="button"><img src="https://logosandtypes.com/wp-content/uploads/2020/11/Google.png"
@@ -113,11 +111,11 @@
   <div class="p-5 mb-5 bg-warning text-dark"></div>
   <div class="container">
     <ul class="progressbar">
-        <li class="active">ORDER</li>
-        <li>SERVER</li>
-        <li>PAYMENT</li>
+      <li class="active">ORDER</li>
+      <li>SERVER</li>
+      <li>PAYMENT</li>
     </ul>
-</div>
+  </div>
   <div class="card mx-auto shadow" style="width: 50rem; border-color: #f3f3f3; border-radius: 5%;">
     <div class="card-body">
       <h5 class="card-title">
@@ -158,7 +156,7 @@
         <div class="col-sm-3">
           <div class="d-grid gap-1 mx-auto">
             <input type="radio" class="btn-check" name="options-outlined" id="success-outlined3" autocomplete="off"
-              onclick="document.getElementById('changeClass3').classList.toggle('customred');">
+              onclick="document.getElementById('changeClass3').classList.add('customred');">
             <label class="btn btn-outline-customred" for="success-outlined3">
               <h5 class="card-title"><img src="/Assets/coin-4.png" class="mx-auto" style="width: 30px;"><span
                   class="text-dark">100 Coins</span></h5>
@@ -288,14 +286,19 @@
       </div>
       <center><a href="/SelectServer.html" class="btn btn-danger mt-3">Next ></a></center>
     </div>
+  </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><svg xmlns="http://www.w3.org/2000/svg" width="16 "
+    height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+    <path fill-rule="evenodd"
+      d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z" />
+  </svg></button>
+  <div style="margin-bottom: 100px;"></div>
+  <footer>
+    <div style="background-color: #313b45">
+      <p class="text-light pt-4">@xxxxxxxxxxxxxxxxxx</p>
     </div>
-    <div style="margin-bottom: 100px;"></div>
-    <footer>
-      <div style="background-color: #313b45">
-        <p class="text-light pt-4">@xxxxxxxxxxxxxxxxxx</p>
-      </div>
-    </footer>
-    
+  </footer>
+
 </body>
 
 <script>
@@ -307,6 +310,25 @@
         this.style.display = 'none';
       }
     };
+  }
+
+  mybutton = document.getElementById("myBtn");
+
+  // When the user scrolls down 20px from the top of the document, show the button
+  window.onscroll = function () { scrollFunction() };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
   }
 </script>
 

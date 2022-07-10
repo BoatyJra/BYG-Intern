@@ -1,5 +1,17 @@
 .bg-wog1{
-    background-image: url('/Assets/WOG_PRODUCT_1.png');
+    background-image: url('Assets/WOG_PRODUCT_1.png');
+    background-repeat: no-repeat;
+    height: 960px;
+}
+
+.bg-wog2{
+    background-image: url('Assets/DT_PRODUCT.png');
+    background-repeat: no-repeat;
+    height: 960px;
+}
+
+.bg-wog3{
+    background-image: url('Assets/OK_PRODUCT.png');
     background-repeat: no-repeat;
     height: 960px;
 }
@@ -7,4 +19,39 @@
 div.slider{
     position: relative;
     top: 321px;
+    float: left;
+    position: sticky;
+}
+
+.circleside{
+    background-color: #1D1D1D;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+}
+
+.hrefdeco{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.hrefdeco:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.articontainer{
+    display: flex;
+    color: #3090F8;
+    width: 373px;
+    height: 117px;
+    margin-top: 33px;
+    font-size: 13px;
+    font-family: 'Kanit', sans-serif;
+}
+
+hr.num1{
+    color: #3090F8;
 }

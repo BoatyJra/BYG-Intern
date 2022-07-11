@@ -55,3 +55,131 @@ div.slider{
 hr.num1{
     color: #3090F8;
 }
+
+.woglogo{
+    margin-top: 167px;
+    width: 611px;
+    height: 244px;
+}
+
+.dtlogo{
+    margin-top: 167px;
+    width: 536px;
+    height: 90px;
+    margin-left: 20px;
+    margin-bottom: 60px
+}
+
+.indevbg{
+    background-color: #F8BC30;
+    width: 154px;
+    height: 34px;
+    font-family: 'Kanit', sans-serif;
+    padding-top: 2px;
+    margin-left: 50px;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.indevtext{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: lighter;
+    margin-left: 26px;
+}
+
+.btn-custom-wog{
+    background-color: #F98D00;
+    padding: 10px 110px 10px 110px;
+    color: #fff;
+    border-radius: 0%;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-wog:hover{
+    background-color: #F98D00;
+    border-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-wog:focus{
+    background-color: #F98D00;
+    border-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-dt{
+    background-color: #004CFF;
+    padding: 10px 110px 10px 110px;
+    color: #fff;
+    border-radius: 0%;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-dt:hover{
+    background-color: #004CFF;
+    border-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-dt:focus{
+    background-color: #004CFF;
+    border-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-ok{
+    background-color: #004CFF;
+    padding: 10px 110px 10px 110px;
+    color: #fff;
+    border-radius: 0%;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-ok:hover{
+    background-color: #F98D00;
+    border-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-custom-ok:focus{
+    background-color: #F98D00;
+    border-color: #fff;
+    font-family: 'Kanit', sans-serif;
+}
+
+.btn-customimg{
+    background-image: url('/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/CHANGE_LANGUAGE.png');
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 14px;
+    border-radius: 0px;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.navtop{
+    text-align: end;
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 12px;
+    padding-top: 10px;
+    padding-right: 30px;
+    display: inline-block;
+}
+
+.navimg{
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+.custom-nav{
+    font-family: 'Kanit', sans-serif;
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 150px
+}

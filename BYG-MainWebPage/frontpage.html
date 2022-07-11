@@ -22,10 +22,19 @@
 </head>
 
 <body>
-  <div class="fixed-top">
+  <div class="sticky-top">
     <div style="background-color: black; width:1920px; height: 40px;">
-      <div class="d-inline" style="color: white;">Follow us on Facebook</div>
-      <div class="d-inline" style="color: white;">Follow us on Instagram</div>
+      <div class="container">
+        <div class="row align-item-end">
+          <div class="col text-end">
+            <span class="navtop"><img src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/facebook.png" width="26px"
+                height="26px" class="navimg">Follow us on Facebook</span>
+            <span class="navtop"><img src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/instagram.png" width="26px"
+                height="26px" class="navimg">Follow us on Facebook</span>
+          </div>
+        </div>
+      </div>
+
     </div>
     <nav class="navbar navbar-expand-lg bg-navbar navbar-light align-content-center"
       style="background-color: white; width:1920px; height: 80px;">
@@ -35,24 +44,39 @@
             style="width: 242px; left: 363px;">
         </a>
         <div class="collapse navbar-collapse">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav custom-nav">
             <li class="nav-item mt-3" style="margin-left: 200px;">
-              <a class="nav-link active text-dark">HOME</a>
+              <a href="#" class="nav-link active text-dark">HOME</a>
             </li>
             <li class="nav-item mt-3">
-              <a class="nav-link text-dark">ABOUT US</a>
+              <a href="#" class="nav-link text-dark">ABOUT US</a>
             </li>
             <li class="nav-item mt-3">
-              <a class="nav-link text-dark">PRODUCT & SERVICE</a>
+              <a href="#" class="nav-link text-dark">PRODUCT & SERVICE</a>
             </li>
             <li class="nav-item mt-3">
-              <a class="nav-link text-dark">NEWS</a>
+              <a href="#" class="nav-link text-dark">NEWS</a>
             </li>
             <li class="nav-item mt-3">
-              <a class="nav-link text-dark">CAREER</a>
+              <a href="#" class="nav-link text-dark">CAREER</a>
             </li>
             <li class="nav-item mt-3">
-              <a class="nav-link text-dark">SUPPORT</a>
+              <a href="#" class="nav-link text-dark">SUPPORT</a>
+            </li>
+            <li>
+              <div class="btn-group">
+                <button type="button" class="btn btn-customimg" data-bs-toggle="dropdown" aria-expanded="false">
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Separated link</a></li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
@@ -62,34 +86,127 @@
   <div class="slider">
     <div>
       <a href="#section1" class="hrefdeco">
-        <img src="/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/WOG_Icon.png"
+        <img src="/BYG-Intern/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/WOG_Icon.png"
           style="margin-left: 76px; margin-right: 10px; margin-bottom: 10px;">Warrior of Gods
       </a>
     </div>
     <div>
       <a href="#section2" class="hrefdeco">
-        <img src="/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/WOG_Icon.png"
+        <img src="/BYG-Intern/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/Double_Tap_Icon.png"
           style="margin-left: 76px; margin-right: 10px; margin-bottom: 10px;">Double Tap
       </a>
     </div>
     <div>
       <a href="#section3" class="hrefdeco">
-        <img src="/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/WOG_Icon.png"
+        <img src="/BYG-Intern/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/OverKill_Icon.png"
           style="margin-left: 76px; margin-right: 10px; margin-bottom: 10px;">Overkill
       </a>
     </div>
   </div>
   <div class="bg-wog1" id="section1">
+    <div class="container">
+      <div class="row align-item-end">
+        <div class="col"></div>
+        <div class="col">
+          <div class="row align-item-end">
+            <div class="col"><img
+                src="/BYG-Intern/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/[Logo]WOG_Horizon.png"
+                class="woglogo">
+              <span class="indevbg text-center">In Development</span><span class="indevtext">3D
+                Strategy&ensp; |
+                &ensp;Mobile</span>
+            </div>
+          </div>
+          <div class="row align-item-end">
+            <div class="col text-white" style="margin-left: 50px; margin-top: 40px;">เกมยิงปืนในรูปแบบ 5v5
+              ที่ขับเคลื่อนโดยเหล่าเอเจนท์ผู้มากความสามารถ</div>
+          </div>
+          <div class="row align-item-end">
+            <div class="col text-center" style="margin-top: 40px;"><button
+                class="btn btn-custom-wog">เข้าสู่เว็บไซต์</button></div>
+          </div>
+          <div class="row align-item-center">
+            <div class="col text-end" style="margin-top: 35px;"><img
+                src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/apple.png" width="171px" height="59px"></div>
+            <div class="col text-start" style="margin-top: 35px;"><img
+                src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/google.png" width="171px" height="59px"></div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="bg-wog2" id="section2">
+    <div class="container">
+      <div class="row align-item-end">
+        <div class="col"></div>
+        <div class="col">
+          <div class="row align-item-end">
+            <div class="col"><img
+                src="/BYG-Intern/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/Asset 2.png"
+                class="dtlogo">
+              <span class="indevbg text-center">In Development</span><span class="indevtext">3D
+                Strategy&ensp; |
+                &ensp;Mobile</span>
+            </div>
+          </div>
+          <div class="row align-item-end">
+            <div class="col text-white" style="margin-left: 50px; margin-top: 40px;">เกมยิงปืนในรูปแบบ 5v5
+              ที่ขับเคลื่อนโดยเหล่าเอเจนท์ผู้มากความสามารถ</div>
+          </div>
+          <div class="row align-item-end">
+            <div class="col text-center" style="margin-top: 40px;"><button
+                class="btn btn-custom-dt">เข้าสู่เว็บไซต์</button></div>
+          </div>
+          <div class="row align-item-center">
+            <div class="col text-end" style="margin-top: 35px;"><img
+                src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/apple.png" width="171px" height="59px"></div>
+            <div class="col text-start" style="margin-top: 35px;"><img
+                src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/google.png" width="171px" height="59px"></div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="bg-wog3" id="section3">
+    <div class="container">
+      <div class="row align-item-end">
+        <div class="col"></div>
+        <div class="col">
+          <div class="row align-item-end">
+            <div class="col"><img
+                src="/BYG-Intern/BYG-MainWebPage/BANNER , CARD Assets/BANNER , CARD Assets/PNG/Logo.png"
+                class="woglogo">
+              <span class="indevbg text-center">In Development</span><span class="indevtext">3D
+                Strategy&ensp; |
+                &ensp;Mobile</span>
+            </div>
+          </div>
+          <div class="row align-item-end">
+            <div class="col text-white" style="margin-left: 50px; margin-top: 40px;">เกมยิงปืนในรูปแบบ 5v5
+              ที่ขับเคลื่อนโดยเหล่าเอเจนท์ผู้มากความสามารถ</div>
+          </div>
+          <div class="row align-item-end">
+            <div class="col text-center" style="margin-top: 40px;"><button
+                class="btn btn-custom-ok">เข้าสู่เว็บไซต์</button></div>
+          </div>
+          <div class="row align-item-center">
+            <div class="col text-end" style="margin-top: 35px;"><img
+                src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/apple.png" width="171px" height="59px"></div>
+            <div class="col text-start" style="margin-top: 35px;"><img
+                src="/BYG-Intern/BYG-MainWebPage/Assets/Assets/PNG/google.png" width="171px" height="59px"></div>
+          </div>
+          <div></div>
+        </div>
+      </div>
+    </div>
   </div>
   <div style="background-color: #000D2B; width:1920px; height: 400px;">
     <div class="container">
       <div class="row align-item-start">
         <div class="col" style="margin-top: 50px;">
-          <img src="/BYG-MainWebPage/Assets/BEYONDGAME_LOGO.png" width="240px" height="98px">
+          <img src="/BYG-Intern/BYG-MainWebPage/Assets/BEYONDGAME_LOGO.png" width="240px" height="98px">
           <div class="articontainer">
             พวกเรามีความฝันที่จะเชื่อมโยงเกมในทุกๆ
             แพลตฟอร์มให้เกมเมอร์ไทยสามารถเข้าถึงและเป็นส่วนหนึ่งกับมันได้ด้วยความสนุกอย่างเต็มที่ โดยมีบียอน เกมส์

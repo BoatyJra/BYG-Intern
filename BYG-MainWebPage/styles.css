@@ -1,19 +1,56 @@
 .bg-wog1{
-    background-image: url('Assets/WOG_PRODUCT_1.png');
+    background-image: url('Assets/WOG_PRODUCT_BG_1.png');
     background-repeat: no-repeat;
     height: 960px;
+}
+
+.w3-animate-left{
+    position: absolute;
+}
+.bg-img1{
+    background-image: url('Assets/Horus.png');
+    background-repeat: no-repeat;
+    height: 960px;
+    z-index: 1;
+    position: absolute;
+    width: 75%;
+    margin: 0px 0px 0px -100px;
+    background-size: cover;
 }
 
 .bg-wog2{
-    background-image: url('Assets/DT_PRODUCT.png');
+    background-image: url('Assets/DT_PRODUCT_BG.png');
+    background-repeat: no-repeat;
+    height: 960px;
+    z-index: 0;
+}
+
+.bg-img2{
+    background-image: url('Assets/DT_CHAR.png');
+    background-repeat: no-repeat;
+    height: 960px;
+    z-index: 1;
+    position: absolute;
+    width: 60%;
+    margin: 0px 0px 0px -300px;
+    background-size: cover;
+}
+
+.bg-wog3{
+    background-image: url('Assets/OK_PRODUCT_BG.png');
     background-repeat: no-repeat;
     height: 960px;
 }
 
-.bg-wog3{
-    background-image: url('Assets/OK_PRODUCT.png');
+.bg-img3{
+    background-image: url('Assets/OverKill_CHAR.png');
     background-repeat: no-repeat;
     height: 960px;
+    z-index: 1;
+    position: absolute;
+    width: 67%;
+    margin: 0px 0px 0px -420px;
+    background-size: cover;
 }
 
 div.slider{
@@ -21,6 +58,7 @@ div.slider{
     top: 321px;
     float: left;
     position: sticky;
+    z-index: 11;
 }
 
 .circleside{
@@ -182,4 +220,8 @@ hr.num1{
     font-size: 11px;
     font-weight: bold;
     margin-left: 150px
+}
+
+.z-indexed{
+    z-index: 10;
 }

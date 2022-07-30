@@ -1,14 +1,14 @@
-html, body {
+/* html, body {
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    }
+    } */
 
 .bg-wog1{
     background-image: url('Assets/WOG_PRODUCT_BG_1.png');
     background-repeat: no-repeat;
-    height: 960px;
+    height: 64em;
     padding: 0px 0px 0px 0px;
 }
 
@@ -25,7 +25,7 @@ html, body {
 .bg-wog2{
     background-image: url('Assets/DT_PRODUCT_BG.png');
     background-repeat: no-repeat;
-    height: 100%;
+    height: 64em;
     z-index: 0;
 }
 
@@ -42,7 +42,7 @@ html, body {
 .bg-wog3{
     background-image: url('Assets/OK_PRODUCT_BG.png');
     background-repeat: no-repeat;
-    height: 100%;
+    height: 64em;
 }
 
 .bg-img3{
@@ -51,7 +51,7 @@ html, body {
     height: 100%;
     position: absolute;
     width: 67%;
-    margin: 0px 0px 0px -420px;
+    margin: 0px 0px 0px -26.25em;
     background-size: cover;
 }
 
@@ -108,6 +108,12 @@ hr.num1{
     height: 90px;
     margin-left: 20px;
     margin-bottom: 60px
+}
+
+.oklogo{
+    margin-top: 167px;
+    width: 611px;
+    height: 244px;
 }
 
 .indevbg{
@@ -181,13 +187,13 @@ hr.num1{
 }
 
 .btn-custom-ok:hover{
-    background-color: #F98D00;
+    background-color: #004CFF;
     border-color: #fff;
     font-family: 'Kanit', sans-serif;
 }
 
 .btn-custom-ok:focus{
-    background-color: #F98D00;
+    background-color: #004CFF;
     border-color: #fff;
     font-family: 'Kanit', sans-serif;
 }
@@ -242,8 +248,13 @@ hr.num1{
     height: 30em;
 }
 
+.paymentbox{
+    height: 59px;
+    width: 171px;
+}
+
 /* media viewport for mobile */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
 
     .navstyle{
         background-color: black;
@@ -261,9 +272,32 @@ hr.num1{
     }
 
     .bg-img1{
-        width: 100vh;
-        margin-top: -10%;
+        width: 100%;
         margin-right: 0%;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        background-position: center;
+    }
+
+    .bg-img2{
+        height: 90%;
+        width: 150%;
+        box-sizing: border-box;
+        display: flex;
+        margin: 0px 0px 0px -26em;
+    }
+
+    .bg-img3{
+        height: 90%;
+        width: 150%;
+        box-sizing: border-box;
+        display: flex;
+        margin: 0px 0px 0px -30em;
+    }
+
+    .bg-wog1, .bg-wog2, .bg-wog3{
+        height: 50em;
     }
 
     .textfeature{
@@ -274,12 +308,20 @@ hr.num1{
         margin-right: auto;
     }
 
-    .woglogo{
-        position: relative;
-        width: 110%;
+    .woglogo, .dtlogo, .oklogo{
+        height: auto;
+        width: 100%;
         object-fit: cover;
         margin: auto;
         margin-top: 50%;
+        box-sizing: border-box;
+    }
+
+    .dtlogo{
+        margin-bottom: 5%;
+    }
+    .oklogo{
+        margin-bottom: -10%;
     }
 
     .btn-custom-wog{
@@ -287,15 +329,21 @@ hr.num1{
         font-size: 100%;
     }
 
+    .btn-custom-dt{
+        width: 20em;
+        font-size: 100%;
+    }
+
+    .btn-custom-ok{
+        width: 20em;
+        font-size: 100%;
+    }
+
     .slider{
-    position: absolute;
-    float: top;
-    top:0;
     position: -webkit-sticky;
     position: sticky;
     z-index: 20;
     margin-left: -10%;
-    margin-top: 10%;
     }
 
     .footer{
@@ -304,4 +352,13 @@ hr.num1{
         height: 100%;
     }
 
-  }
+    .paymentbox{
+        height: auto;
+        width: 100%;
+    }
+
+    .indevtext{
+        text-align: center;
+    }
+
+}
